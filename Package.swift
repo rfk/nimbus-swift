@@ -7,13 +7,13 @@ let package = Package(
     name: "Nimbus",
     platforms: [.iOS(.v11)],
     products: [
-        .library(name: "Nimbus", targets: ["Nimbus"]),
+        .library(name: "Nimbus", targets: ["NimbusStandalone"]),
     ],
     targets: [
         .binaryTarget(
-            name: "Nimbus",
+            name: "NimbusStandalone",
             url: "https://user.fm/files/v2-7472ecb3b3e5610580d3ded0af54fbdd/NimbusStandalone.xcframework.zip",
-            checksum: "c207a765ffa7e1bc4a849d426739854aafa9822a863324f581601190ab12e25d",
-        ),
+            checksum: "c207a765ffa7e1bc4a849d426739854aafa9822a863324f581601190ab12e25d"
+        )
     ]
 )
